@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+
+
+    <!--空构造器-->
+    <bean id="HelloWorldBeanDefault" class="com.msw.HelloWorld"></bean>
+
+    <!--带参数的构造器-->
+    <bean id="HelloWorldBeanWithConstructor" class="com.msw.HelloWorld">
+        <constructor-arg index="0" value="init with constructor"></constructor-arg>
+    </bean>
+
+    <!--带参数，并且指定构造方法-->
+    <bean id="HelloWorldBeanWithFactory" class="com.msw.HelloWorld" factory-method="newInstance">
+        <constructor-arg index="0" value="init with constructor(static)"></constructor-arg>
+    </bean>
+
+    <bean id="laowang" class="com.msw.Person" autowire="byName">
+        <constructor-arg index="0" value="laowang"></constructor-arg>
+        <!--<constructor-arg index="1" ref="AUDI A6"></constructor-arg>-->
+
+    </bean>
+    <bean id="AUDI A6" class="com.msw.Car">
+        <constructor-arg index="0" value="奥迪A6"></constructor-arg>
+    </bean>
+    <bean id="AUDI A5" class="com.msw.Car">
+        <constructor-arg index="0" value="奥迪A5"></constructor-arg>
+    </bean>
+    <bean id="AUDI A4" class="com.msw.Car">
+        <constructor-arg index="0" value="奥迪A4"></constructor-arg>
+    </bean>
+</beans>

@@ -6,9 +6,14 @@
     <bean id="helloWorld" class="com.msw.HelloWorld"></bean>
     <bean id="helloChina" class="com.msw.HelloChina"></bean>
     <bean id="person" class="com.msw.Person">
+
+
         <!--<property name="helloMessage" ref="helloWorld"></property>-->
+
+
         <property name="helloMessage" ref="helloChina"></property>
 
     </bean>
+</beans >
 
-</beans>
+
