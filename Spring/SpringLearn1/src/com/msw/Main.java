@@ -2,6 +2,7 @@ package com.msw;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.Resource;
 
 /**
  * Created by moqiaowen on 2017/6/23.

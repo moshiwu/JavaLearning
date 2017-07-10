@@ -1,12 +1,17 @@
 package com.msw;
 
 import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by moqiaowen on 2017/7/3.
  */
 public class Main {
+
+    @Autowired
+    HelloWorld bean4;
+
     public static void main(String[] args) {
         System.out.println("hello");
 
@@ -23,5 +28,6 @@ public class Main {
 
         Person person = (Person) factory.getBean("laowang");
         System.out.println(person);
+
     }
 }

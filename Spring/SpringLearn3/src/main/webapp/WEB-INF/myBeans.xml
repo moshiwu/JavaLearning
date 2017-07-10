@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<MyCustomBeans>
+    <bean id="customBean1" class="customBean1-class"></bean>
+    <bean id="customBean2" class="customBean2-class"></bean>
+</MyCustomBeans>

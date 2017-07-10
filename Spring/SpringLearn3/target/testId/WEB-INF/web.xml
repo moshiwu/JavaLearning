@@ -6,6 +6,19 @@
 
   <display-name>SpringMVC Web Application</display-name>
 
+
+  <!--为了在Servlet中使用Autowired，需要配置ContextLoaderListener-->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+  <!--如需配置ContextLoaderListener，也需要配置applicationContext.xml-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/mvc-dispatcher-servlet.xml /WEB-INF/applicationContext.xml</param-value>
+  </context-param>
+
+
   <servlet>
     <servlet-name>mvc-dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -15,6 +28,11 @@
   <servlet-mapping>
     <servlet-name>mvc-dispatcher</servlet-name>
     <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
   </servlet-mapping>
 
   <filter>

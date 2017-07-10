@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringLearn3" />
+        <module name="SpringLearn4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringLearn3" target="1.5" />
+      <module name="SpringLearn4" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
