@@ -12,6 +12,7 @@
 
             <!--声明一个切入点，用表达式来表示切入什么方法-->
             <aop:pointcut id="pointcut1" expression="execution(* com.msw.StudentService.login(..))"></aop:pointcut>
+            <aop:pointcut id="pointcut2" expression="execution(* com.msw.UserService"></aop:pointcut>
 
             <!--在addUserLog方法前切入-->
             <aop:before method="addUserLog" pointcut-ref="pointcut1"></aop:before>

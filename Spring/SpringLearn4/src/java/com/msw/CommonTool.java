@@ -11,7 +11,7 @@ public class CommonTool {
 
     public void addUserLog() {
         try {
-            this.response.getWriter().write("记录一条日志<br/>");
+            this.response.getWriter().write("日志：一条日志<br/>");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -19,7 +19,7 @@ public class CommonTool {
 
     public void addUserOnline() {
         try {
-            this.response.getWriter().write("记录在线人数<br/>");
+            this.response.getWriter().write("日志：在线人数<br/>");
         } catch (IOException e) {
             e.printStackTrace();
         }

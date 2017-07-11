@@ -17,7 +17,7 @@
             <aop:before method="addUserLog" pointcut-ref="pointcut1"></aop:before>
 
             <!--在addUserOnline方法后切入-->
-            <aop:after-returning method="addUserOnline"  pointcut-ref="pointcut1"></aop:after-returning>
+            <!--<aop:after-returning method="addUserOnline"  pointcut-ref="pointcut1"></aop:after-returning>-->
 
 
         </aop:aspect>
